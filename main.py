@@ -138,6 +138,10 @@ async def extract_aadhaar(aadhaar: UploadFile = File(...)):
         return JSONResponse(status_code=he.status_code, content={"error": he.detail})
     except Exception as e:
         return JSONResponse(status_code=500, content={"error": str(e)})
+    
+@app.get("/Result"):
+async def get_result():
+    return JSONResponse(status_code=200, content={"message": "Success"})
 
 if __name__ == "__main__":
     import uvicorn
