@@ -9,7 +9,7 @@ from fastapi import FastAPI, File, UploadFile, HTTPException
 from fastapi.responses import JSONResponse
 
 # Configure the API key
-GOOGLE_API_KEY = 'YOUR_API_KEY '
+GOOGLE_API_KEY = 'AIzaSyBkMFn58k0KdGPZGSOqP4UXtYu2qYMLKmk'
 genai.configure(api_key=GOOGLE_API_KEY)
 
 # FastAPI app initialization
