@@ -1,22 +1,14 @@
 {
     "builds": [
-      {
-        "src": "Data_extraction/main.py",
-        "use": "@vercel/python"
-      }
         {
-            "src": "main.py",
+            "src": "Data_extraction/main.py",
             "use": "@vercel/python"
         }
     ],
     "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "Data_extraction/main.app"
-      }
         {
             "src": "/(.*)",
-            "dest": "main.py"
+            "dest": "Data_extraction/main.py"
         }
     ]
 }
