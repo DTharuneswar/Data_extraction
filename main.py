@@ -115,3 +115,7 @@ async def extract_aadhaar(aadhaar: UploadFile = File(...)):
 async def home():
     """Root endpoint"""
     return {"message": "Aadhaar Extraction API is running!"}
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
