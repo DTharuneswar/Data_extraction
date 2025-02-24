@@ -139,7 +139,7 @@ async def extract_aadhaar(aadhaar: UploadFile = File(...)):
     except Exception as e:
         return JSONResponse(status_code=500, content={"error": str(e)})
     
-@app.get("/result")
+@app.get("/")
 async def get_result():
     return {"message": "Success"}
 
