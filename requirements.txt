@@ -1,5 +1,5 @@
-google-generative-ai
-Pillow
-PyMuPDF
 fastapi
 uvicorn
+google-generativeai
+pillow
+pymupdf
